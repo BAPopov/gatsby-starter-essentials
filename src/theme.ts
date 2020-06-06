@@ -1,27 +1,25 @@
-const customMediaQuery = (maxWidth: number) =>
+const minWidthMediaQuery = (minWidth: number) =>
+  `@media (min-width: ${minWidth}px)`;
+
+const maxWidthMediaQuery = (maxWidth: number) =>
   `@media (max-width: ${maxWidth}px)`;
 
-const media = {
-  xs: customMediaQuery(600),
-  sm: customMediaQuery(960),
-  md: customMediaQuery(1280),
-  lg: customMediaQuery(1920),
-  xl: customMediaQuery(3840)
+const breakpoints = {
+  xs: 600,
+  sm: 960,
+  md: 1280,
+  lg: 1920,
+  xl: 1921
 };
 
-const Theme = {
-  borderRadius: '5px',
-  colors: {
-    primary: 'cyan',
-    secondary: 'magenta'
-  },
+const theme = {
   breakpoints: {
-    xs: media.xs,
-    sm: media.sm,
-    md: media.md,
-    lg: media.lg,
-    xl: media.xl
+    xs: maxWidthMediaQuery(breakpoints.xs),
+    sm: maxWidthMediaQuery(breakpoints.sm),
+    md: maxWidthMediaQuery(breakpoints.md),
+    lg: maxWidthMediaQuery(breakpoints.lg),
+    xl: minWidthMediaQuery(breakpoints.xl)
   }
 };
 
-export default Theme;
+export default theme;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-type active = 'red' | 'blue';
+// type examplePropType = 'opt1' | 'opt2';
 
 export interface ButtonProps {
   /**
    * Help supporting a react-transition-group/Transition component.
    */
-  active?: active;
+  // exampleProp?: examplePropType;
 }
 
 declare const Button: React.FC<ButtonProps>;
