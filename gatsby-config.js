@@ -67,6 +67,7 @@ module.exports = {
         openAnalyzer: false
       }
     },
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline'
