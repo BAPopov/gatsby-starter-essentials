@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
-import Theme from '../theme';
+import theme from '~src/Theme';
 
 import Button from '~components/Button';
 
 import Page from '~layout/Page';
 
 const IndexPage = () => (
-  <ThemeProvider theme={Theme}>
+  <ThemeProvider theme={theme}>
     <Page>
       <div
         style={{
