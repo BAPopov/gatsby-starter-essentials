@@ -17,6 +17,8 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.23.0",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
     "gatsby-plugin-google-analytics": "^2.3.3",
@@ -26,9 +28,11 @@
     "gatsby-plugin-offline": "^3.2.8",
     "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sitemap": "^2.4.4",
+    "gatsby-plugin-styled-components": "^3.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
