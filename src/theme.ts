@@ -14,11 +14,19 @@ const breakpoints = {
 
 const theme = {
   breakpoints: {
-    xs: maxWidthMediaQuery(breakpoints.xs),
-    sm: maxWidthMediaQuery(breakpoints.sm),
-    md: maxWidthMediaQuery(breakpoints.md),
-    lg: maxWidthMediaQuery(breakpoints.lg),
-    xl: minWidthMediaQuery(breakpoints.xl)
+    mediaQuery: {
+      xs: maxWidthMediaQuery(breakpoints.xs),
+      sm: maxWidthMediaQuery(breakpoints.sm),
+      md: maxWidthMediaQuery(breakpoints.md),
+      lg: maxWidthMediaQuery(breakpoints.lg),
+      xl: minWidthMediaQuery(breakpoints.xl)
+    },
+    values: {
+      xs: 600,
+      sm: 960,
+      md: 1280,
+      lg: 1920
+    }
   }
 };
 
