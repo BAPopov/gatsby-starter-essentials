@@ -59,7 +59,9 @@ width: 100%;
       padding-right: 16px;
     }
     max-width:${
-      props.maxWidth && `${props.theme.breakpoints.values[props.maxWidth]}px`
+      props.maxWidth
+        ? `${props.theme.breakpoints.values[props.maxWidth]}px`
+        : `${props.theme.breakpoints.values.lg}px`
     }
 `}
 `;
